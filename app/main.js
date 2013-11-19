@@ -34,6 +34,6 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function (sy
     viewLocator.useConvention();
 
     //Show the app by setting the root view model for our application with a transition.
-    app.setRoot('Shell/ViewModels/Shell', 'entrance');
+    app.setRoot('shell/viewmodels/shell', 'entrance');
   });
 });
