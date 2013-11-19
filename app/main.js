@@ -1,9 +1,9 @@
 ﻿requirejs.config({
   paths: {
     'text': '../lib/require/text',
-    'durandal': '../lib/Durandal/js',
-    'plugins': '../lib/Durandal/js/plugins',
-    'transitions': '../lib/Durandal/js/transitions',
+    'durandal': '../lib/durandal/js',
+    'plugins': '../lib/durandal/js/plugins',
+    'transitions': '../lib/durandal/js/transitions',
     'knockout': '../lib/knockout/knockout-3.0.0',
     'knockoutrepeat': '../lib/knockout/knockout-repeat',
     'bootstrap': '../lib/bootstrap/js/bootstrap',
