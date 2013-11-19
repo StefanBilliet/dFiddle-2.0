@@ -1,0 +1,30 @@
+﻿<label>Select input with repeat binding:</label>
+<div data-bind="with: SelectInputWithRepeatBinding">
+  <select data-bind="value: SelectedItemKey">
+    <option data-bind="repeat: { foreach: Items, bind: 'attr: { value: $item().Key }, text: $item().Text' }"></option>
+  </select>
+  <br />
+  <span data-bind="text: 'Selected key: ' + SelectedItemKey()"></span>
+</div>
+
+<hr />
+
+<label>Select input with manual foreach binding:</label>
+<div data-bind="with: SelectInputWithForeachBinding">
+  <select data-bind="value: SelectedItemKey">
+    <!-- ko foreach: Items -->
+    <option data-bind="attr: { value: $data.Key }, text: $data.Text"></option>
+    <!-- /ko -->
+  </select>
+  <br />
+  <span data-bind="text: 'Selected key: ' + SelectedItemKey()"></span>
+</div>
+
+<hr />
+
+<label>Select input with options binding:</label>
+<div data-bind="with: SelectInputWithOptionsBinding">
+  <select data-bind="options: Items, optionsText: 'Text', optionsValue: 'Key', value: SelectedItemKey, optionsCaption: 'Choose...'"></select>
+  <br />
+  <span data-bind="text: 'Selected key: ' + SelectedItemKey()"></span>
+</div>
